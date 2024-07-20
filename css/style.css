@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #EEE;
+    background-image: url('../imgs/pngtree-d-rendering-of-online-shopping-concept-on-mobile-e-commerce-platform-picture-image_4842136.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* small media */
+@media (min-width: 768px) {
+    .container,
+    .card {
+        width: 750px;
+    }
+}
+/* medium media */
+@media (min-width: 992px) {
+    .container,
+    .card {
+        width: 970px;
+    }
+}
+/* large media */
+@media (min-width: 1200px) {
+    .container,
+    .card {
+        width: 1170px;
+    }
+}
+.header .container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.container .image img {
+    width: 30%;
+    margin-bottom: 50px;
+} 
+
+.container .inputs input {
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+}
+
+.container .inputs .buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.container .inputs .buttons button {
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+}
+
+.container .inputs .buttons button:hover {
+    background-color: #eeee;
+}
+.container .inputs .buttons .close:hover{
+    background-color: red;
+}
+.container .add {
+    border: none;
+    cursor: pointer;
+    margin: 50px 100px;
+}
+
+.container .add button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .add button:hover {
+    color: red;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    color: rgb(199, 222, 241);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card .main-div {
+    margin-left: 10px;
+    display: flex;
+    background-color: transparent;
+    width: 25%;
+    border: 2px solid white;
+    border-radius: 6px;
+    box-shadow: 0 0 20px #ddd;
+}
+
+.card .main-div .image-div {
+    margin: 10px;
+}
+
+.card .main-div .image-div img {
+    border-radius: 6px;
+    width: 80%;
+}
+
+.card .main-div .text-div button {
+    margin: 10px 5px;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.card .main-div .text-div button:first-child {
+    background-color: blue;
+    color: white;
+}
+
+.card .main-div .text-div span {
+    display: block;
+    font-size: 18px;
+    margin: 10px;
+} 
